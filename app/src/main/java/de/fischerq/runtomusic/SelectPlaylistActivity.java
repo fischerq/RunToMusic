@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class SelectPlaylistActivity extends Activity{
-    private String[] songsArray = { "Ellie Goulding -Love Me Like You Do", "Jason Derulo - Want To Want Me", "C"};
+    private String[] songsArray = { "Ellie Goulding - Love Me Like You Do", "Jason Derulo - Want To Want Me", "Adele - Rolling in the Deep"};
 
     private ArrayList<String> playlist;
 

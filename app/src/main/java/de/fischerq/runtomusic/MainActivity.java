@@ -3,6 +3,8 @@ package de.fischerq.runtomusic;
 import android.content.Intent;
 import android.app.Activity;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,7 +16,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import java.util.ArrayList;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
     static final int SELECT_PLAYLIST_REQUEST = 1;
 
@@ -24,6 +26,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
         SeekBar speedSlider = (SeekBar) findViewById(R.id.speedSlider);
         speedSlider.setProgress(10);
@@ -69,6 +72,8 @@ public class MainActivity extends Activity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent = new Intent(this, PreferencesActivity.class);
+            startActivity(intent);
             return true;
         }
 
