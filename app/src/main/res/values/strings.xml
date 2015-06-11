@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RunToMusic</string>
+
+    <string name="title">RunToMusic - Main App!</string>
+    <string name="button_select_playlist">Set a Playlist</string>
+    <string name="empty_songname">No song playing</string>
+
+    <string name="button_confirm_playlist">Play</string>
+    <string name="action_settings">Settings</string>
+    <string name="artist_placeholder">Unknown Artist</string>
+</resources>

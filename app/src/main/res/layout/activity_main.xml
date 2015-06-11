@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView android:text="@string/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:textSize="22dp"
+        android:padding="10dp"
+        android:paddingTop="10dp"
+        android:background="#336699"
+        />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:text="@string/button_select_playlist"
+        android:onClick="selectPlaylist"
+        />
+
+    <SeekBar
+        android:id="@+id/speedSlider"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:max="20"/>
+    <TextView
+        android:id="@+id/speedDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView android:id="@+id/current_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_songname"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
